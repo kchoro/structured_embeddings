@@ -1,0 +1,27 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+
+\begin{document}
+The \textit{symmetrically recursive} kernel $Q_d:\mathbf{C}^{2^d}\to\mathbf{C}^{2^d}$ is a linear isometry, defined recursively by $Q_0=\left(1\right)$ and
+
+\[
+Q_{d+1}=\frac{1}{\sqrt{2}}
+\left(
+\begin{matrix}
+\prod_{i=1}^d Q_d D_{\xi}& \prod_{i=1}^d  Q_d D_{\zeta}\\
+\prod_{i=1}^d Q_d D_{\zeta}& -\prod_{i=1}^d  Q_d D_{\xi}
+\end{matrix}\right)
+\]
+
+$\xi=\xi_0,\xi_1,\dots,\xi_{2^d}$ and $\zeta=\zeta_0,\zeta_1,\dots,\zeta_{2^d}$ are sequences of independent equiprobable $\{0,1\}$ random variables. $D_{\xi}$ and $D_{\zeta}$ are diagonal matrices defined via:
+
+\[
+D_x = \left(
+\begin{matrix}
+(-1)^{x_0} & \dots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \dots & (-1)^{x_n}
+\end{matrix}\right)
+\]
+
+\end{document}
