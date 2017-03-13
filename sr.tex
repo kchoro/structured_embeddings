@@ -8,19 +8,25 @@ The \textit{symmetrically recursive} kernel $Q_d:\mathbf{C}^{2^d}\to\mathbf{C}^{
 Q_{d+1}=\frac{1}{\sqrt{2}}
 \left(
 \begin{matrix}
-\prod_{i=1}^d Q_d D_{\xi_i}& \prod_{i=1}^d  Q_d D_{\zeta_i}\\
-\prod_{i=1}^d Q_d D_{\zeta_i}& -\prod_{i=1}^d  Q_d D_{\xi_i}
+\prod_{i=1}^d Q_d C_{d,i}& \prod_{i=1}^d  Q_d C_{d,i}\\
+\prod_{i=1}^d Q_d D_{d,i}& -\prod_{i=1}^d  Q_d D_{d,i}
 \end{matrix}\right)
 \]
 
-$\xi=\xi_0,\xi_1,\dots,\xi_{2^d}$ and $\zeta=\zeta_0,\zeta_1,\dots,\zeta_{2^d}$ are sequences of independent equiprobable $\{+1,-1\}$ random variables. $D_{\xi}$ and $D_{\zeta}$ are diagonal matrices defined via:
-
+$D_{d,i}(0),\dots,D_{d,i}(2^d)$ and $C_{d,i}(0),\dots,C_{d,i}(2^d)$ are sequences of independent equiprobable $\{+1,-1\}$ random variables in:
 \[
-D_x = \left(
+D_{d,i} = \left(
 \begin{matrix}
-x_0 & \dots & 0 \\
+D_{d,i}(0) & \dots & 0 \\
 \vdots & \ddots & \vdots \\
-0 & \dots & x_{2^d}
+0 & \dots & D_{d,i}(2^d)
+\end{matrix}\right)
+\quad
+C_{d,i} = \left(
+\begin{matrix}
+C_{d,i}(0) & \dots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \dots & C_{d,i}(2^d)
 \end{matrix}\right)
 \]
 
