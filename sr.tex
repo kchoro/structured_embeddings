@@ -13,21 +13,31 @@ Q_{d+1}=\frac{1}{\sqrt{2}}
 \end{matrix}\right)
 \]
 
-$D_{d,i}(0),\dots,D_{d,i}(2^d)$ and $C_{d,i}(0),\dots,C_{d,i}(2^d)$ are sequences of independent equiprobable $\{+1,-1\}$ random variables in:
+$D_{d,i}(0),\dots,D_{d,i}(2^d-1)$ and $C_{d,i}(0),\dots,C_{d,i}(2^d-1)$ are sequences of independent equiprobable $\{+1,-1\}$ random variables in:
 \[
 D_{d,i} = \left(
 \begin{matrix}
 D_{d,i}(0) & \dots & 0 \\
 \vdots & \ddots & \vdots \\
-0 & \dots & D_{d,i}(2^d)
+0 & \dots & D_{d,i}(2^d-1)
 \end{matrix}\right)
 \quad
 C_{d,i} = \left(
 \begin{matrix}
 C_{d,i}(0) & \dots & 0 \\
 \vdots & \ddots & \vdots \\
-0 & \dots & C_{d,i}(2^d)
+0 & \dots & C_{d,i}(2^d-1)
 \end{matrix}\right)
 \]
+
+We aim to derive a polynomial expression for $y^{d+1}_j=(Q_{d+1}x)_j$, where $x\in\mathbf{C}^{2^{d+1}}$ is comprised of the elements $x(b_0,\dots, b_{d})\in\mathbf{C}$ for $b_i\in\{0,1\}$.
+
+$y^{d+1}_j$ is a polynomial in:
+\begin{enumerate}
+	\item $x(b_0,\dots, b_{d})$, for all $b_i\in\{0,1\}$
+	\item $C_{p,i}$ and $D_{p,i}$, for all $0\le p<d+1$ and $1\le i < p$
+\end{enumerate}
+
+The base case is $y_0^0=Q_0x=x_0$.
 
 \end{document}
